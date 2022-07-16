@@ -1,0 +1,380 @@
+@font-face {
+  font-family: "Century Gothic";
+  font-display: swap;
+  src: url("../fonts/CenturyGothic-Bold.woff2") format("woff2"),
+    url("../fonts/CenturyGothic-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-dark {
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  background-color: #333;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  padding: 12px 22.5px;
+  transition: all 0.5s ease 0s;
+}
+
+.btn-pink {
+  transition: all 0.5s ease 0s;
+  font-weight: 500;
+  color: white;
+  background-color: #932ec3;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.wrapper-index {
+  min-height: 966px;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper-info {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header .container {
+  max-width: 1820px;
+}
+
+.header__icon {
+  fill: white;
+  transition: all 0.5s ease 0s;
+  width: 40px;
+  height: 40px;
+  background-color: #333333;
+  border-radius: 50%;
+}
+
+.header__icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.intro {
+}
+
+.intro__title {
+  font-family: "Century Gothic";
+  font-weight: 700;
+  font-size: 56px;
+  line-height: calc(69 / 56);
+  text-align: center;
+  margin: 0 0 25px;
+}
+
+.intro__btn {
+  font-size: 22px;
+  text-transform: uppercase;
+  display: block;
+  padding: 19px 0;
+  margin: 0 auto;
+  max-width: 270px;
+}
+
+.info {
+  padding: 65px 0;
+}
+
+.info__top {
+  margin-bottom: 70px;
+}
+
+.info__title {
+  font-family: "Century Gothic";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: calc(59, 48);
+  color: #333333;
+}
+
+.info__title span {
+  color: #932ec3;
+  font-size: 64px;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.info__btn.btn-pink {
+  font-size: 16px;
+  padding: 12px 27.5px;
+  margin-right: 15px;
+}
+
+.table-info .row {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.table-info .row:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.table-info__title {
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  color: #333333;
+  padding: 26px 30px;
+}
+
+.table-info__actions {
+  padding: 0px 30px;
+  position: relative;
+}
+
+.table-info__actions::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: calc(100% - 20px);
+  top: 10px;
+  left: 0;
+  background-color: #d9d9d9;
+}
+
+.table-info__points {
+  margin-right: 10px;
+}
+
+.table-info__points-value {
+  font-family: "Century Gothic";
+  font-weight: 700;
+  font-size: 44px;
+  line-height: calc(54 / 44);
+  color: #932ec3;
+  padding-right: 12px;
+}
+
+.table-info__points-text {
+  font-family: "Century Gothic";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  text-transform: uppercase;
+}
+
+.table-info__btn {
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 0;
+  display: inline-block;
+  min-width: 90px;
+  border: 2px solid #952ec5;
+  border-radius: 10px;
+  transition: all 0.5s ease 0s;
+  color: #0f0f0f;
+}
+
+.table-info__row-done .table-info__title,
+.table-info__row-done .table-info__points-value,
+.table-info__row-done .table-info__points-text {
+  color: #aaaaaa;
+}
+
+.table-info__row-done .table-info__btn {
+  border-color: transparent;
+  color: #2bc656;
+  pointer-events: none;
+}
+
+.table-info__row-waiting .table-info__btn {
+  color: #222222;
+  border-color: #aaaaaa;
+  pointer-events: none;
+}
+
+@media (any-hover: hover) {
+  .btn-dark:hover {
+    color: #333;
+    background-color: white;
+  }
+  .btn-pink:hover {
+    background-color: #7925a0;
+  }
+  .header__icon:hover {
+    background-color: white;
+    fill: #333333;
+  }
+  .table-info__btn:hover {
+    opacity: 0.7;
+  }
+}
+
+.header__icon:active {
+  fill: #fff;
+  background-color: #333;
+  transition: none;
+}
+
+.btn-dark:active {
+  color: #fff;
+  background-color: #333333;
+  transition: none;
+}
+
+.btn-pink:active {
+  background-color: #642084;
+  transition: none;
+}
+
+@media (max-width: 1400px) {
+  .table-info__title {
+    flex: 0 0 65%;
+  }
+  .table-info__actions {
+    flex: 0 0 35%;
+  }
+  .table-info__points-value {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .wrapper-index {
+    min-height: 900px;
+  }
+  .intro__title {
+    margin: 25px 0;
+    font-size: 48px;
+  }
+  .intro__btn {
+    padding: 14px 0;
+  }
+  .info__top {
+    margin-bottom: 50px;
+  }
+  .info__title {
+    font-size: 38px;
+  }
+  .info__title span {
+    font-size: 46px;
+  }
+  .table-info__title {
+    flex: 0 0 55%;
+    padding: 20px;
+    font-size: 22px;
+  }
+  .table-info__actions {
+    flex: 0 0 45%;
+    padding: 0 20px;
+  }
+  .table-info__points-value {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .wrapper-index {
+    min-height: 800px;
+  }
+  .btn-dark {
+    padding: 12px 17px;
+  }
+  .header {
+    padding: 10px 0;
+  }
+  .intro__title {
+    font-size: 30px;
+  }
+  .intro__btn {
+    max-width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+  }
+  .info {
+    padding: 50px 0;
+  }
+  .info__top {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .info__title {
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  .info__title span {
+    font-size: 30px;
+  }
+  .info__btn {
+    width: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .table-info .row {
+    flex-direction: column;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .table-info__title, .table-info__actions {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .table-info__title {
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+  .table-info__actions {
+    padding: 10px 20px;
+  }
+  .table-info__actions::before {
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: 0;
+  }
+  .table-info__points-value {
+    font-size: 25px;
+    padding-right: 10px;
+  }
+  .table-info__points-text {
+    font-size: 15px;
+  }
+  .table-info__btn {
+    min-width: 120px;
+    padding: 7px 3px;
+    font-size: 15px;
+  }
+}
