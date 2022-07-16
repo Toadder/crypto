@@ -60,11 +60,15 @@ body {
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
 }
 
 .header {
   padding: 20px 0;
+}
+
+.header .container {
+  max-width: 1520px;
 }
 
 .header__icon {
@@ -290,6 +294,9 @@ body {
 }
 
 @media (max-width: 767.98px) {
+  .wrapper {
+    background-image: url("../img/bg-index_mobile.png") !important;
+  }
   .btn-dark {
     padding: 12px 17px;
   }
@@ -298,7 +305,7 @@ body {
   }
   .intro__title {
     font-size: 30px;
-    margin: 20px 0 25px;
+    margin: 40px 0 25px;
   }
   .intro__btn {
     max-width: 100%;
@@ -331,7 +338,8 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  .table-info__title, .table-info__actions {
+  .table-info__title,
+  .table-info__actions {
     flex: 0 0 auto;
     width: 100%;
   }
