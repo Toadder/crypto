@@ -4,5 +4,5 @@ function setHeight() {
 }
 if (window.innerWidth <= 992) setHeight();
 window.addEventListener("resize", () => {
-  if (window.innerWidth <= 992) setHeight;
+  if(window.innerWidth <= 992) setHeight();
 });
