@@ -57,7 +57,7 @@ body {
 }
 
 .wrapper {
-  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -294,7 +294,7 @@ body {
 }
 
 @media (max-width: 767.98px) {
-  .wrapper {
+  .wrapper-mobile-bg {
     background-image: url("../img/bg-index_mobile.png") !important;
   }
   .btn-dark {
